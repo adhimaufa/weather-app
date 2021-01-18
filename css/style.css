@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,163));
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.location,.temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature{
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature-value{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.temperature-value span{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.temperature-value h2{
+    font-size: 40px;
+}
