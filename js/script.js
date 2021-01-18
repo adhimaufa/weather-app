@@ -32,7 +32,7 @@ window.addEventListener('load',()=>{
                     temperatureValue.addEventListener('click', () => {
                         if(temperatureUnit.textContent === "F"){
                             temperatureUnit.textContent = "C";
-                            temperatureDegree.textContent = parseFloat(celcius);
+                            temperatureDegree.textContent = Math.floor(celcius);
                         }else{
                             temperatureUnit.textContent = "F";
                             temperatureDegree.textContent = temperature;
