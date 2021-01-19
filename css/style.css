@@ -5,14 +5,22 @@
 }
 
 body{
-    height: 100vh;
+    height: max-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
     background: linear-gradient(rgb(47,150,163),rgb(48,62,163));
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.now-pos{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .location,.temperature{
@@ -23,9 +31,14 @@ body{
     align-items: center;
 }
 
+.temperature-sby,
+.temperature-mlg,
+.temperature-kdr,
 .temperature{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .temperature-value{
@@ -41,4 +54,61 @@ body{
 
 .temperature-value h2{
     font-size: 40px;
+}
+
+.temperature-description-kediri,
+.temperature-description-sby,
+.temperature-description-mlg,
+.temperature-description{
+    text-align: center;
+}
+
+.selected-pos{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* column-count: 4; */
+}
+
+.weather-card{
+    background: beige;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(47,150,163);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 60%;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, .4);
+}
+
+
+.city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+    .selected-pos{
+        height: max-content;
+        flex-direction: column;
+    }
+    
+    .weather-card{
+        background: beige;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+        width: 80%;
+    }
 }
