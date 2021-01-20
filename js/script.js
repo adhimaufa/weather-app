@@ -6,7 +6,7 @@ window.addEventListener('load',()=>{
     let locationTimezone = document.querySelector('.location-timezone');
     let temperatureValue = document.querySelector('.temperature');
     const temperatureUnit = document.querySelector('.temperature-unit')
-//     const proxy = "https://cors-anywhere.herokuapp.com/" ;
+    const proxy = "https://cors-anywhere.herokuapp.com/" ;
     
 
     if(navigator.geolocation){
@@ -14,8 +14,8 @@ window.addEventListener('load',()=>{
             longitude = position.coords.longitude;
             latitude = position.coords.latitude;
 
-//             const proxy = "https://cors-anywhere.herokuapp.com/" ;
-//             const API = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${latitude},${longitude}`;
+            const proxy = "https://cors-anywhere.herokuapp.com/" ;
+            const API = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${latitude},${longitude}`;
             const API = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${latitude},${longitude}`;
             
             fetch(API)
@@ -62,8 +62,8 @@ window.addEventListener('load',()=>{
     const temperatureUnitSby = document.querySelector('.temperature-unit-sby');
     const temperatureUnitMlg = document.querySelector('.temperature-unit-mlg')
 
-//     const APIKDR = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.822840,112.011864`;
-    const APIKDR = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.822840,112.011864`;
+    const APIKDR = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.822840,112.011864`;
+//     const APIKDR = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.822840,112.011864`;
     fetch (APIKDR)
         .then(response =>{
             return response.json()
@@ -91,8 +91,8 @@ window.addEventListener('load',()=>{
 
     
 
-//     const APISBY = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.2574719,112.7520883`;
-    const APISBY = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.2574719,112.7520883`;
+    const APISBY = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.2574719,112.7520883`;
+//     const APISBY = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.2574719,112.7520883`;
     fetch (APISBY)
         .then(response =>{
             return response.json()
@@ -118,8 +118,8 @@ window.addEventListener('load',()=>{
             setIcon1(icon,document.querySelector('.weather-icon-sby'));
         })
 
-//     const APIMLG = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.983908,112.621391`;
-    const APIMLG = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.983908,112.621391`;
+    const APIMLG = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.983908,112.621391`;
+//     const APIMLG = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/-7.983908,112.621391`;
     fetch (APIMLG)
         .then(response =>{
             return response.json()
